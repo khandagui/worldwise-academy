@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#14243a"><meta name="description" content="Daily politics and general culture learning.">
+<title>WorldWise Academy</title><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="stylesheet" href="styles.css">
+</head><body>
+<header><a class="brand" href="#" data-nav="home"><span class="logo">W</span><span><b>WorldWise</b><small>ACADEMY</small></span></a><button id="install" class="gold hidden">Install app</button></header>
+<main>
+<section id="home" class="view active">
+<div class="hero"><p class="eyebrow">YOUR PERSONAL LEARNING JOURNEY</p><h1>Learn the world.<br><em>Understand the why.</em></h1><p>One focused hour a day to build your knowledge of politics, history and general culture.</p>
+<div class="stats"><div><b id="count">0</b><small>lessons complete</small></div><div><b id="streak">0</b><small>day streak</small></div><div><b id="average">—</b><small>quiz average</small></div></div></div>
+<div class="card"><div class="between"><div><p class="eyebrow">CONTINUE LEARNING</p><h2 id="todayTitle">Day 1: What is politics?</h2></div><span class="pill">60 min</span></div><p id="todayDesc" class="muted"></p><div class="track"><div id="progress"></div></div><small id="progressLabel" class="muted"></small><button id="continue" class="primary">Start today's lesson →</button></div>
+<h2 class="section-title">Your daily routine</h2><div class="routine"><div>🏛️ <span><b>Politics</b><small>Systems, power and ideas</small></span><strong>20 min</strong></div><div>🌍 <span><b>General culture</b><small>History, geography and more</small></span><strong>20 min</strong></div><div>📰 <span><b>Current affairs</b><small>One important news story</small></span><strong>10 min</strong></div><div>🧠 <span><b>Recall & quiz</b><small>Test what you remember</small></span><strong>10 min</strong></div></div>
+<h2 class="section-title">Next lessons</h2><div id="nextLessons" class="list"></div>
+</section>
+<section id="learn" class="view"><p class="eyebrow">YOUR CURRICULUM</p><h1>Learn</h1><p class="muted">A 12-week path from beginner to confident learner.</p><div id="weeks" class="week-tabs"></div><div id="curriculum" class="list"></div></section>
+<section id="lesson" class="view"><button class="back" data-nav="learn">← All lessons</button><div id="lessonContent"></div></section>
+<section id="quiz" class="view"><button class="back" data-nav="lesson">← Back to lesson</button><div id="quizContent"></div></section>
+<section id="progressView" class="view"><p class="eyebrow">YOUR LEARNING JOURNEY</p><h1>Your progress</h1><p class="muted">Your data stays in this browser on this device.</p><div class="statgrid"><div class="card"><small>Lessons complete</small><b id="pCount">0</b></div><div class="card"><small>Quiz average</small><b id="pAverage">—</b></div><div class="card"><small>Current streak</small><b id="pStreak">0 days</b></div><div class="card"><small>Lessons available</small><b>84</b></div></div><div class="card"><h2>Weekly reflection</h2><label for="reflection">What did you learn? What should you review?</label><textarea id="reflection" rows="5" placeholder="This week I learned…"></textarea><button id="saveReflection" class="primary">Save reflection</button><p id="reflectStatus" class="muted small"></p></div><div class="card"><h2>Backup your progress</h2><p class="muted">Export a backup in case browser data is cleared.</p><button id="export" class="secondary">Export backup</button> <label for="import" class="secondary filelabel">Import backup</label><input id="import" type="file" accept="application/json" hidden><p id="backupStatus" class="muted small"></p></div></section>
+<section id="resources" class="view"><p class="eyebrow">KEEP EXPLORING</p><h1>Resources</h1><p class="muted">Free sources for learning and current affairs.</p>
+<a class="resource" href="https://www.khanacademy.org/" target="_blank" rel="noopener"><b>Khan Academy</b><span>Economics, history and government ↗</span></a>
+<a class="resource" href="https://www.britannica.com/" target="_blank" rel="noopener"><b>Encyclopaedia Britannica</b><span>Reference articles and history ↗</span></a>
+<a class="resource" href="https://www.bbc.com/news" target="_blank" rel="noopener"><b>BBC News</b><span>UK and international affairs ↗</span></a>
+<a class="resource" href="https://ourworldindata.org/" target="_blank" rel="noopener"><b>Our World in Data</b><span>Evidence and global statistics ↗</span></a>
+<a class="resource" href="https://www.nationalgeographic.com/" target="_blank" rel="noopener"><b>National Geographic</b><span>Geography, culture and nature ↗</span></a>
+<div class="card"><b>News habit</b><p class="muted">Ask what happened, where, who is involved, why it matters and what remains uncertain. Compare credible sources on controversial issues.</p></div>
+</section>
+</main>
+<nav><button class="nav active" data-nav="home">⌂<small>Home</small></button><button class="nav" data-nav="learn">▤<small>Learn</small></button><button class="nav" data-nav="progressView">▥<small>Progress</small></button><button class="nav" data-nav="resources">◎<small>Resources</small></button></nav>
+<div id="toast" role="status"></div><script src="app.js"></script></body></html>
